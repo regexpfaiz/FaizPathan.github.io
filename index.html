@@ -7,42 +7,127 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif; /* Professional font */
+            line-height: 1.6;
+            color: #333;
+            margin: 0; /* Remove default body margin */
+        }
+
+        #wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Intro Section */
+        #intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #intro p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Header and Navigation */
+        #header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #nav ul.links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        #nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        /* Projects Section */
         .posts {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            justify-content: center; /* This is the key change */
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            justify-content: center;
         }
+
         .post-card {
             background: #fff;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 15px;
+            padding: 20px;
             text-align: center;
+            transition: transform 0.2s;
         }
+
+        .post-card:hover {
+            transform: scale(1.02);
+        }
+
         .post-card img {
             width: 100%;
-            height: 200px;
+            height: 250px;
             object-fit: cover;
             border-radius: 10px;
+            margin-bottom: 15px;
         }
+
         .post-card h2 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-        .post-card p {
-            font-size: 14px;
-            color: #555;
+            font-size: 1.5em;
             margin-bottom: 10px;
         }
+
+        .post-card p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
         .post-card a.button {
             background-color: #007BFF;
             color: white;
-            padding: 8px 15px;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .post-card a.button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        #footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #f8f8f8;
+        }
+
+        #footer h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        #footer .icons.alt {
+            margin-top: 20px;
+        }
+
+        #footer .icons.alt li {
+            display: inline-block;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -76,28 +161,36 @@
                 <article class="post-card">
                     <img src="images/cab.jpg" alt="Taxi Revenue Project">
                     <h2><a href="https://github.com/regexpfaiz/Improving-Revenue-Generation-for-Drivers">Improving Revenue Generation for Taxi Drivers</a></h2>
-                    <p>Analyzing payment methods and fare amounts using hypothesis testing to help taxi drivers maximize earnings.</p>
+                    <p>
+                        <strong>Project Goal:</strong> To identify key factors influencing taxi driver earnings and develop data-driven recommendations to maximize revenue.  This involved analyzing payment method preferences and fare amount distributions using statistical hypothesis testing.  <strong>Key Result:</strong>  The analysis revealed a significant correlation between payment methods and average fare amounts, leading to actionable insights for drivers to optimize their strategies.
+                    </p>
                     <a href="https://github.com/regexpfaiz/Improving-Revenue-Generation-for-Drivers" class="button">View Project</a>
                 </article>
 
                 <article class="post-card">
                     <img src="images/CC_transaction.JPG" alt="Credit Card Dashboard">
                     <h2><a href="https://github.com/regexpfaiz/Credit_Card_Dashboard">Credit Card Financial Dashboard</a></h2>
-                    <p>Interactive Power BI dashboard providing real-time insights into key credit card transaction trends.</p>
+                    <p>
+                        <strong>Project Goal:</strong> To create an interactive Power BI dashboard that provides real-time insights into key credit card transaction trends, enabling users to monitor financial performance and identify areas for improvement. <strong>Key Result:</strong> The dashboard effectively visualizes transaction volume, average transaction value, and fraud detection rates, allowing for quick identification of anomalies and trends.
+                    </p>
                     <a href="https://github.com/regexpfaiz/Credit_Card_Dashboard" class="button">View Project</a>
                 </article>
 
                 <article class="post-card">
                     <img src="images/Iris.jpg" alt="Iris Prediction">
                     <h2><a href="https://github.com/regexpfaiz/Streamlit-IrisPredict">Iris Prediction</a></h2>
-                    <p>Building an ML model to classify iris species based on petal and sepal characteristics.</p>
+                    <p>
+                        <strong>Project Goal:</strong> To build a machine learning model capable of accurately classifying iris species based on petal and sepal characteristics. This model was deployed using Streamlit for interactive use. <strong>Key Result:</strong> The developed model achieved a high accuracy in predicting iris species, demonstrating the effectiveness of the chosen machine learning algorithms and features.
+                    </p>
                     <a href="https://github.com/regexpfaiz/Streamlit-IrisPredict" class="button">View Project</a>
                 </article>
 
                 <article class="post-card">
                     <img src="images/Crop.jpg" alt="Crop Yield Prediction">
                     <h2><a href="https://github.com/regexpfaiz/Crop-Yield-Prediction">Crop Yield Prediction</a></h2>
-                    <p>Predicting crop yield based on soil quality, weather, and irrigation factors to optimize farming practices.</p>
+                    <p>
+                        <strong>Project Goal:</strong> To develop a predictive model for crop yield based on various factors such as soil quality, weather conditions, and irrigation practices. This aims to optimize farming practices and improve agricultural productivity. <strong>Key Result:</strong> The model successfully predicted crop yield with reasonable accuracy, providing valuable information to farmers for planning and resource allocation.
+                    </p>
                     <a href="https://github.com/regexpfaiz/Crop-Yield-Prediction" class="button">View Project</a>
                 </article>
             </section>
