@@ -9,57 +9,24 @@
     <style>
         /* General Styles */
         body {
-            font-family: 'Arial', sans-serif; /* Professional font */
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
-            margin: 0; /* Remove default body margin */
+            margin: 0;
+            background-color: #f4f4f4;
         }
 
         #wrapper {
-            max-width: 960px;
+            max-width: 1300px;
             margin: 0 auto;
             padding: 20px;
-        }
-
-        /* Intro Section */
-        #intro {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        #intro h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        #intro p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-
-        /* Header and Navigation */
-        #header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        #nav ul.links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-
-        #nav li {
-            display: inline-block;
-            margin: 0 15px;
         }
 
         /* Projects Section */
         .posts {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
             justify-content: center;
         }
 
@@ -73,24 +40,24 @@
         }
 
         .post-card:hover {
-            transform: scale(1.02);
+            transform: translateY(-5px);
         }
 
         .post-card img {
             width: 100%;
-            height: 250px;
+            height: 200px;
             object-fit: cover;
             border-radius: 10px;
             margin-bottom: 15px;
         }
 
         .post-card h2 {
-            font-size: 1.5em;
+            font-size: 1.4em;
             margin-bottom: 10px;
         }
 
         .post-card p {
-            font-size: 1em;
+            font-size: 0.95em;
             color: #555;
             margin-bottom: 15px;
         }
@@ -98,7 +65,7 @@
         .post-card a.button {
             background-color: #007BFF;
             color: white;
-            padding: 10px 20px;
+            padding: 8px 16px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
@@ -112,111 +79,39 @@
         /* Footer */
         #footer {
             text-align: center;
-            padding: 30px 0;
-            background-color: #f8f8f8;
-        }
-
-        #footer h3 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-
-        #footer .icons.alt {
-            margin-top: 20px;
-        }
-
-        #footer .icons.alt li {
-            display: inline-block;
-            margin: 0 10px;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            margin-top: 40px;
         }
     </style>
 </head>
-<body class="is-preload">
-    <div id="wrapper" class="fade-in">
-        <div id="intro">
+<body>
+    <div id="wrapper">
+        <header id="header" style="text-align:center; margin-bottom:20px;">
             <h1>Faiz Pathan Portfolio</h1>
-            <p>Data Analyst skilled in Python, Machine Learning, Deep Learning, SQL, Excel, Power BI, and Tableau
-                <a href="https://www.linkedin.com/in/faiz-pathan-ds/">@Faiz_Pathan</a></p>
-            <ul style="list-style-type: none; padding: 0; margin: 0;">
-                <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
-        </div>
-
-        <header id="header">
-            <a href="index.html" class="logo">Data Science Projects</a>
+            <p>Data Analyst skilled in Python, Machine Learning, SQL, Power BI & Tableau</p>
         </header>
 
-        <nav id="nav">
-            <ul class="links">
-                <li class="active"><a href="index.html">Projects</a></li>
-            </ul>
-            <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/faiz-pathan-ds/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/regexpfaiz" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-        </nav>
+        <section class="posts">
+            <article class="post-card">
+                <img src="images/cab.jpg" alt="Taxi Revenue Project">
+                <h2><a href="https://github.com/regexpfaiz/Improving-Revenue-Generation-for-Drivers">Improving Revenue Generation for Taxi Drivers</a></h2>
+                <p>Analyzed key factors influencing taxi earnings and developed data-driven insights to maximize revenue.</p>
+                <a href="https://github.com/regexpfaiz/Improving-Revenue-Generation-for-Drivers" class="button">View Project</a>
+            </article>
 
-        <div id="main">
-            <section class="posts">
-                <article class="post-card">
-                    <img src="images/cab.jpg" alt="Taxi Revenue Project">
-                    <h2><a href="https://github.com/regexpfaiz/Improving-Revenue-Generation-for-Drivers">Improving Revenue Generation for Taxi Drivers</a></h2>
-                    <p>
-                        <strong>Project Goal:</strong> To identify key factors influencing taxi driver earnings and develop data-driven recommendations to maximize revenue.  This involved analyzing payment method preferences and fare amount distributions using statistical hypothesis testing.  <strong>Key Result:</strong>  The analysis revealed a significant correlation between payment methods and average fare amounts, leading to actionable insights for drivers to optimize their strategies.
-                    </p>
-                    <a href="https://github.com/regexpfaiz/Improving-Revenue-Generation-for-Drivers" class="button">View Project</a>
-                </article>
-
-                <article class="post-card">
-                    <img src="images/CC_transaction.JPG" alt="Credit Card Dashboard">
-                    <h2><a href="https://github.com/regexpfaiz/Credit_Card_Dashboard">Credit Card Financial Dashboard</a></h2>
-                    <p>
-                        <strong>Project Goal:</strong> To create an interactive Power BI dashboard that provides real-time insights into key credit card transaction trends, enabling users to monitor financial performance and identify areas for improvement. <strong>Key Result:</strong> The dashboard effectively visualizes transaction volume, average transaction value, and fraud detection rates, allowing for quick identification of anomalies and trends.
-                    </p>
-                    <a href="https://github.com/regexpfaiz/Credit_Card_Dashboard" class="button">View Project</a>
-                </article>
-
-                <article class="post-card">
-                    <img src="images/Iris.jpg" alt="Iris Prediction">
-                    <h2><a href="https://github.com/regexpfaiz/Streamlit-IrisPredict">Iris Prediction</a></h2>
-                    <p>
-                        <strong>Project Goal:</strong> To build a machine learning model capable of accurately classifying iris species based on petal and sepal characteristics. This model was deployed using Streamlit for interactive use. <strong>Key Result:</strong> The developed model achieved a high accuracy in predicting iris species, demonstrating the effectiveness of the chosen machine learning algorithms and features.
-                    </p>
-                    <a href="https://github.com/regexpfaiz/Streamlit-IrisPredict" class="button">View Project</a>
-                </article>
-
-                <article class="post-card">
-                    <img src="images/Crop.jpg" alt="Crop Yield Prediction">
-                    <h2><a href="https://github.com/regexpfaiz/Crop-Yield-Prediction">Crop Yield Prediction</a></h2>
-                    <p>
-                        <strong>Project Goal:</strong> To develop a predictive model for crop yield based on various factors such as soil quality, weather conditions, and irrigation practices. This aims to optimize farming practices and improve agricultural productivity. <strong>Key Result:</strong> The model successfully predicted crop yield with reasonable accuracy, providing valuable information to farmers for planning and resource allocation.
-                    </p>
-                    <a href="https://github.com/regexpfaiz/Crop-Yield-Prediction" class="button">View Project</a>
-                </article>
-            </section>
-        </div>
-
-        <footer id="footer">
-            <section>
-                <h3>Contact</h3>
-                <p>Thane, Maharashtra, India</p>
-            </section>
-            <section>
-                <h3>Social</h3>
-                <ul class="icons alt">
-                    <li><a href="https://www.linkedin.com/in/faiz-pathan-ds/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/regexpfaiz" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
-            </section>
-        </footer>
+            <article class="post-card">
+                <img src="images/CC_transaction.JPG" alt="Credit Card Dashboard">
+                <h2><a href="https://github.com/regexpfaiz/Credit_Card_Dashboard">Credit Card Financial Dashboard</a></h2>
+                <p>Created an interactive Power BI dashboard for real-time insights into credit card transactions.</p>
+                <a href="https://github.com/regexpfaiz/Credit_Card_Dashboard" class="button">View Project</a>
+            </article>
+        </section>
     </div>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <footer id="footer">
+        <p>&copy; 2025 Faiz Pathan | <a href="https://www.linkedin.com/in/faiz-pathan-ds/">LinkedIn</a> | <a href="https://github.com/regexpfaiz">GitHub</a></p>
+    </footer>
 </body>
 </html>
